@@ -1,35 +1,46 @@
-.navbar{
-    display: flex;
-    position: fixed;
-    z-index: 20000;
-    left: 0;
-    top: 0;
-    right: 0;
-    border: 0;
-    background-color: transparent;
-    height: 80px;
-    justify-content: space-between;
-    align-items: center;
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  position: fixed;
+  z-index: 20000;
+  left: 0;
+  top: 0;
+  right: 0;
+  border: 0;
+  background-color: transparent;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSide-bar {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+
+.rightSide-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 180px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rightSide-bar {
+    padding-left: 20px;
+  }
   
-   
-   
-}
-.leftSide-bar{
-    padding-left: 36px;
-    justify-content: start;
-    padding: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.navbar-items{
-    display: flex;
-    align-items: center;
-}
-.rightSide-bar{
-        justify-content: start;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 180px;
+  .leftSide-bar {
+    padding: 20px;
+  }
 }

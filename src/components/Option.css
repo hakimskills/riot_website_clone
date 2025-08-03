@@ -1,138 +1,130 @@
-.options{
-   
-    height: 60vh;
-    display: flex;
-   padding: 0px 20px 0px 40px;
+/* Options Component */
+.options {
+  height: 60vh;
+  display: flex;
+  padding: 0px 20px 0px 40px;
+  opacity: 0;
+  animation: fade-in 3s forwards;
 }
-.option-details{
-    height: 20vh;
-}
-.option-select ul{
-    list-style: none;
-   text-transform: uppercase;
-   max-width: 200px;
- 
-}
-.option-select ul li{
-padding: 10px;
-margin-bottom: 5px;
-font-size: 13px;
-color: #4a4a4a;
-cursor: pointer;
-border-radius: 6px;
-}
-.big-title{
-background: rgba(186, 186, 186, .1);
-    font-weight: 700;
-    font-size: 13px;
-    color:black;
-    cursor: none;
-    
-}
-.big-title:hover {
-    
-    background: none;
-    font-weight: normal;
-    font-size: 13px;
-    
-    color: black;
-}
-.option-select ul li:hover{
-background: rgba(186, 186, 186, .4);
-}
-.side-by-side {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-}
-
-
 
 .option-details {
-    height: 40vh;
-    width: 100%;
-    border-radius: 10px;
-
+  height: 40vh;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .option-select {
-    height: 20vh;
-    width: 100%;
-
+  height: 20vh;
+  width: 100%;
 }
 
-.valorant-part img {
-
-    height: 30vh;
-    width: 50vh;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-    transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    min-width: 20vh;
+.option-select ul {
+  list-style: none;
+  text-transform: uppercase;
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
 }
 
-.valorant-part {
- height: 40vh;
-    border-radius: 20px;
-    margin-left: 20px;
-    display: flex;
-    animation-name: fade-in;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-   
+.option-select ul li {
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  border-radius: 6px;
+  transition: var(--transition-fast);
 }
 
-.valorant-part h4 {
-    color: #0a0a0a;
-    letter-spacing: .03em;
-    width: 100%;
-    position: static;
-    display: inline-block;
-    left: 0px;
-    bottom: 8px;
-    text-transform: unset;
-    font-family: unset;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 15.6px;
-    text-align: left;
+.option-select ul li:hover {
+  background: hsl(var(--glass-overlay));
+  color: hsl(var(--foreground));
+}
+
+.big-title {
+  background: hsl(var(--muted) / 0.1);
+  font-weight: 700;
+  font-size: 13px;
+  color: hsl(var(--foreground));
+  cursor: default;
+}
+
+.big-title:hover {
+  background: hsl(var(--muted) / 0.1);
+  color: hsl(var(--foreground));
+}
+
+.side-by-side {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
 }
 
 .option-details-content {
   display: flex;
-
-
 }
-.options {
-    opacity: 0;
-    animation-name: fade-in;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+
+.valorant-part {
+  height: 40vh;
+  border-radius: 20px;
+  margin-left: 20px;
+  display: flex;
+  animation: fade-in 2s forwards;
 }
+
+.valorant-part img {
+  height: 30vh;
+  width: 50vh;
+  min-width: 20vh;
+  box-shadow: var(--shadow-elegant);
+  transition: var(--transition-smooth);
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.valorant-part img:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-glow);
+}
+
+.valorant-part h4 {
+  color: hsl(var(--foreground));
+  letter-spacing: .03em;
+  width: 100%;
+  position: static;
+  display: inline-block;
+  left: 0px;
+  bottom: 8px;
+  text-transform: unset;
+  font-family: unset;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15.6px;
+  text-align: left;
+}
+
+.show-image img {
+  max-height: 250px;
+  width: 100vh;
+  box-shadow: var(--shadow-elegant);
+  transition: var(--transition-smooth);
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: fade-in 0.5s forwards;
+}
+
+.part {
+  display: block;
+  margin-left: 10px;
+}
+
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-.show-image img{
-    max-height: 250px;
-        width: 100vh;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-        transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        display: block;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        animation-name: fade-in;
-            animation-duration: 0.5s;
-            animation-fill-mode: forwards;
-}
-.part{
-    display: block;
-    margin-left: 10px;
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
