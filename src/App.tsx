@@ -1,5 +1,6 @@
 import NavBar from "./components/navBar/NavBar";
 import SoulFighter from "./components/SoulFighter";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className='hero-new__background-image'>
         <SoulFighter />
       </div>
+      <Toaster />
     </div>
   );
 }
