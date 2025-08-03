@@ -103,3 +103,39 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@font-face {
+  font-family: haki;
+  src: url(Mark\ Pro.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1em;
+  font-family: haki,Arial, sans-serif;    
+}
+
+html {
+ 
+}
+
+
+
+.hero-new__background-image {
+  background-image: linear-gradient(275deg, rgba(10,10,10,0) 0, rgba(10,10,10,.8) 120%), url(./images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+
+  
+}
+.hero-new__background-image::after{
+}
+.second-wall{
+  background-color: aqua;
+  height: 100vh;
+  width: 100;
+}

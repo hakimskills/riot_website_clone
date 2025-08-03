@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    position: fixed;
+    z-index: 20000;
+    left: 0;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: transparent;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+  
+   
+   
+}
+.leftSide-bar{
+    padding-left: 36px;
+    justify-content: start;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-items{
+    display: flex;
+    align-items: center;
+}
+.rightSide-bar{
+        justify-content: start;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 180px;
+}

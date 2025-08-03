@@ -1,0 +1,99 @@
+@font-face {
+    font-family: hakimAd;
+    src: url(EcoCoding.ttf);
+}
+.items-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.language svg{
+  cursor: pointer;
+    fill: white;
+   padding: 8px;
+   margin-right: 10px;
+   
+}
+
+.language :hover{
+    background-color:rgba(128, 128, 128, .3);
+    border-radius: 2px;
+}
+.search-icon svg{
+height: 19px;
+width: 20px;
+cursor: pointer;
+}
+button{
+    
+}
+.search-input{
+        background-color: transparent;
+            font-weight: 700;
+            text-transform: uppercase;
+        color: white;
+            font-size: 13px !important;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+            outline: 0;
+            margin-right: 10px;
+            width: 140px;
+            height: 30px;
+            
+}
+.search-content{
+        background-color: transparent;
+            transition: background-color .1s ease-in-out;
+            box-shadow: inset 0 0 0 1px #f9f9f9;
+                border-radius: 1.6rem;
+                color: white;
+                display: -ms-flexbox;
+                display: flex;
+                align-items: right;
+                justify-content: space-between;
+                padding: .3rem 1.4rem !important;
+}
+.search-icon svg{
+    fill:white;
+    background-color: transparent;
+}
+.search-bar button{
+    background-color: transparent;
+    border: 0;
+}
+.search-input::placeholder{
+    color: white;
+}
+.red-button{
+                text-transform: uppercase;
+    position: relative;
+        display: inline-block;
+        border: 0;
+        vertical-align: middle;
+        cursor: pointer;
+        overflow: visible;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 32px;
+        color: black;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: .025em;
+        background-color: #d1363a;
+        background-image: linear-gradient(-183deg, #d1363a 49.5%, #2b2a29 50.5%);
+        background-size: 100% 255%;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        font-family: hakimAd, monospace,;
+        transition-property: color, background-color, background-position;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+
+}
+.signIn-button{
+    padding-left: 18px;
+}

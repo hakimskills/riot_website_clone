@@ -1,0 +1,35 @@
+.drop-up{
+    line-height: 1.5;
+        font-weight: 400;
+        -webkit-text-size-adjust: 100%;
+        --color-bg-gradient: rgba(11, 196, 226, 0.2);
+        font-size: 1em;
+        -webkit-font-smoothing: antialiased;
+        font-family: "FF Mark W05", Arial, sans-serif;
+        color: #d1363a;
+        overflow: hidden;
+        pointer-events: none;
+    
+        fill: #7e7e7e;
+        width: 8px;
+        height: 5px;
+        padding-right: 20px;
+}
+@keyframes haki {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.riot-fist2 svg {
+    fill: black;
+
+}
+.riot-logo2{
+    animation: haki 2s ease 0s 1 normal forwards;
+}

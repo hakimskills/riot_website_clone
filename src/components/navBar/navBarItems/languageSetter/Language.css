@@ -1,0 +1,33 @@
+.language-available{
+    position: absolute;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.language-list{
+    list-style: none;
+padding: 20px;
+width: 150px;
+
+}
+.language-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+   
+}
+.language-list li:hover{
+    color: rgb(209, 54, 57);
+}
+.language-list .selected{
+    color: rgb(209, 54, 57);
+}
+ .language-list svg{
+    fill: rgb(209, 54, 57);
+   margin-left: 10px;
+    
+}

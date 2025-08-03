@@ -1,0 +1,105 @@
+@font-face {
+    font-family: hakimo;
+    src: url(FontFont_FF.Mark.Pro.Bold.otf);
+}
+.riot-svg{
+    width: 50px;
+    height: 100px;
+    max-height: 26px
+}
+.items-inline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.drop-downs{
+    display: flex;
+    justify-content: space-between  ;
+margin-left: 20px;
+}
+.drop-downs a p {
+    padding: 6px;
+    color: white;
+    font-family: hakimo;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #f9f9f9;
+        
+        letter-spacing: .08em;
+        overflow: hidden;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 14px;
+
+}
+.drop-down-active:hover{
+    background: rgba(128, 128, 128, 0.3);
+    border-radius: 6.4px;
+}
+.drop-down-active:hover .drop-down path {
+    fill: white;
+}
+.inline-drop{
+    display:flex;
+    align-items: center;
+    padding: 0;
+}
+.submenu{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+
+    list-style: none;
+    border-radius: 6.4px;
+    background-color: transparent;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .2);
+    border-radius: 0 0 2px 2px;
+    top: 45px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.drop-down-active:hover .submenu,
+.submenu:hover{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.submenu li {
+    min-width: 150px;
+    padding: 10px;
+    float: none;
+    color: #e7e6e3;
+    font-size: 14px;
+  
+    
+
+}
+.drop-down-active:hover .submenu {
+    pointer-events: auto;
+}
+ 
+.submenu li a {
+    text-decoration: none;
+    color: #c7c7c7;
+}
+.submenu .hidden {
+    background-color: transparent;
+    height: 0;
+}
+.submenu .showed{
+    border-top: rgb(209, 54, 57) solid 4px;
+    border-radius: 5px;
+    background-color: #292929;
+    padding: 20px;
+}
+
+.submenu .showed li:hover{
+    background: rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+    color: white;
+}
+.submenu .showed li:hover a{
+    color: white;
+}
