@@ -1,4 +1,4 @@
-import NavBar from "./components/navBar/NavBar";
+import NavBar from "./components/navBar/NavBar.jsx";
 import SoulFighter from "./components/SoulFighter";
 import { Toaster } from "./components/ui/toaster";
 
