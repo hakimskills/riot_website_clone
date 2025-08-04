@@ -97,3 +97,53 @@ button{
 .signIn-button{
     padding-left: 18px;
 }
+
+/* Mobile Responsive Design for Right Items */
+@media (max-width: 768px) {
+  .search-content {
+    padding: 0.2rem 1rem !important;
+  }
+  
+  .search-input {
+    width: 100px;
+    font-size: 11px !important;
+  }
+  
+  .red-button {
+    padding: 8px 20px;
+    font-size: 10px;
+  }
+  
+  .signIn-button {
+    padding-left: 10px;
+  }
+  
+  .language svg {
+    padding: 4px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-content {
+    display: none;
+  }
+  
+  .red-button {
+    padding: 6px 15px;
+    font-size: 9px;
+  }
+  
+  .signIn-button {
+    padding-left: 5px;
+  }
+  
+  .items-inline {
+    gap: 0.25rem;
+  }
+  
+  .language svg {
+    padding: 2px;
+    margin-right: 2px;
+  }
+}

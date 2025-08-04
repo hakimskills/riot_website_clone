@@ -1,21 +1,27 @@
 /* Options Component */
 .options {
-  height: 60vh;
+  min-height: 60vh;
   display: flex;
-  padding: 0px 20px 0px 40px;
+  flex-direction: row;
+  padding: 1rem 2rem;
   opacity: 0;
   animation: fade-in 3s forwards;
+  gap: 1rem;
+  overflow-x: auto;
 }
 
 .option-details {
-  height: 40vh;
+  min-height: 40vh;
   width: 100%;
   border-radius: 10px;
+  flex: 1;
 }
 
 .option-select {
-  height: 20vh;
+  min-height: 20vh;
   width: 100%;
+  min-width: 200px;
+  flex-shrink: 0;
 }
 
 .option-select ul {
@@ -65,17 +71,21 @@
 }
 
 .valorant-part {
-  height: 40vh;
+  min-height: 40vh;
   border-radius: 20px;
-  margin-left: 20px;
+  margin-left: 1rem;
   display: flex;
+  flex-direction: column;
   animation: fade-in 2s forwards;
+  max-width: 400px;
 }
 
 .valorant-part img {
-  height: 30vh;
-  width: 50vh;
-  min-width: 20vh;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   box-shadow: var(--shadow-elegant);
   transition: var(--transition-smooth);
   display: block;
@@ -106,7 +116,9 @@
 
 .show-image img {
   max-height: 250px;
-  width: 100vh;
+  width: 100%;
+  max-width: 600px;
+  object-fit: cover;
   box-shadow: var(--shadow-elegant);
   transition: var(--transition-smooth);
   display: block;
@@ -117,7 +129,60 @@
 
 .part {
   display: block;
-  margin-left: 10px;
+  margin-left: 1rem;
+}
+
+/* Mobile Responsive Design for Options */
+@media (max-width: 768px) {
+  .options {
+    flex-direction: column;
+    padding: 1rem;
+    height: auto;
+    min-height: auto;
+  }
+  
+  .option-details {
+    min-height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .option-select {
+    min-height: auto;
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .valorant-part {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  
+  .valorant-part img {
+    max-width: 100%;
+  }
+  
+  .option-details-content {
+    flex-direction: column;
+  }
+  
+  .side-by-side {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .options {
+    padding: 0.5rem;
+  }
+  
+  .option-select ul {
+    max-width: 100%;
+  }
+  
+  .part {
+    margin-left: 0.5rem;
+  }
 }
 
 @keyframes fade-in {
