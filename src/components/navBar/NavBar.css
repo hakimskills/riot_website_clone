@@ -1,79 +1,107 @@
-/* Navigation Bar Styles */
+/* Mobile-First Navigation Bar */
 .navbar {
-  display: flex;
   position: fixed;
-  z-index: 20000;
-  left: 0;
   top: 0;
+  left: 0;
   right: 0;
-  border: 0;
-  background-color: transparent;
-  height: 80px;
-  justify-content: space-between;
+  z-index: 10000;
+  display: flex;
   align-items: center;
-  padding: 0 1rem;
+  justify-content: space-between;
+  background: transparent;
+  height: 60px;
+  padding: 0 0.75rem;
+  border: none;
+  transition: var(--transition-smooth);
 }
 
 .leftSide-bar {
-  padding: 1rem 2rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
+  padding: 0.5rem;
 }
 
 .navbar-items {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .rightSide-bar {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 2rem;
   flex-shrink: 0;
+  padding: 0 0.5rem;
+  gap: 0.5rem;
 }
 
-/* Mobile First Responsive Design */
-@media (max-width: 480px) {
+/* Tablet Styles */
+@media (min-width: 480px) {
   .navbar {
-    height: 60px;
-    padding: 0 0.5rem;
+    height: 70px;
+    padding: 0 1rem;
   }
   
   .leftSide-bar {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
   }
   
   .rightSide-bar {
     padding: 0 1rem;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
   
   .navbar-items {
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 }
 
-@media (max-width: 768px) {
+/* Small Desktop */
+@media (min-width: 768px) {
   .navbar {
-    height: 70px;
+    height: 80px;
+    padding: 0 1.5rem;
   }
   
   .leftSide-bar {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
   
   .rightSide-bar {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+    gap: 1rem;
+  }
+  
+  .navbar-items {
+    gap: 1rem;
   }
 }
 
+/* Large Desktop */
 @media (min-width: 1024px) {
+  .navbar {
+    padding: 0 2rem;
+  }
+  
+  .leftSide-bar {
+    padding: 1rem 2.5rem;
+  }
+  
+  .rightSide-bar {
+    padding: 0 2.5rem;
+    gap: 1.25rem;
+  }
+  
+  .navbar-items {
+    gap: 1.25rem;
+  }
+}
+
+/* Extra Large Desktop */
+@media (min-width: 1200px) {
   .leftSide-bar {
     padding: 1rem 3rem;
   }
