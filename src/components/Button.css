@@ -1,64 +1,70 @@
-/* Button Components */
-.icon {
-  transition: var(--transition-fast);
-  filter: drop-shadow(0 4px 3px rgba(10,10,10,.4));
-}
+    .icon svg{
+        transition: .2s ease-out;
+        filter: drop-shadow(0 4px 3px rgba(10,10,10,.4));
+        width: 24px; 
+       
+        line-height: 48px;
+        
+    }
+    .icon-button{
+        z-index: 100;
+    
+display: inline-flex;
+    width: 48px;
+        background-color: black;
+        border-radius: 50%;
+        height: 48px;
+        font-weight: 700;
+        letter-spacing: .025em;
+justify-content: center;
+align-items: center;
+        margin-right: 0.25rem;
+        filter: drop-shadow(0 4px 3px rgba(10,10,10,.4));
+    }
+    .button{
+    background: linear-gradient(135deg,#0bc4e2 0,#2c8cc2 100%);
+    box-shadow: 0 10px 45px -10px rgba(226,11,11,.15), 0 0 20px -10px rgba(226,11,11,.35), 0 10px 30px -10px rgba(226,11,11,.25);
+background: linear-gradient(315deg,#f76f6f 0,#b50707 100%);
+   
+     font-size: 1.938rem;
+    padding: 12px;
+    min-width: 180px;
+   
+    overflow: hidden;
+    display: inline-block;
+    border: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 24px;
+    line-height: 1;
+    min-width: 150px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .025em;
+    transition: all .2s ease-out;
+    color: #f9f9f9;
+   
+    
 
-.icon svg {
-  width: 24px;
-  line-height: 48px;
-}
 
-.icon-button {
-  z-index: 100;
-  display: inline-flex;
-  width: 48px;
-  height: 48px;
-  background-color: hsl(var(--primary));
-  border-radius: 50%;
-  font-weight: 700;
-  letter-spacing: .025em;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0.25rem;
-  filter: drop-shadow(0 4px 3px rgba(10,10,10,.4));
-  transition: var(--transition-fast);
-}
+    }
+    .button .hidden{
+        display: none;
+    }
+    .allContent{
+        width: 275px;
+    
+    }
+    .button:hover{
+        background: linear-gradient(315deg,#fc6060 0,#fc6060 50%,#cf0606 100%); 
+        box-shadow: 0 10px 30px -10px rgba(226,11,11,.25), 0 10px 30px -10px rgba(226,11,11,.5), 0 10px 35px -10px rgba(226,11,11,.5);
 
-.button {
-  background: linear-gradient(315deg, hsl(var(--riot-red)) 0%, hsl(var(--destructive)) 100%);
-  box-shadow: var(--shadow-elegant), var(--shadow-glow);
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: .025em;
-  padding: 12px;
-  min-width: 180px;
-  overflow: hidden;
-  display: inline-block;
-  border: 0;
-  vertical-align: middle;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 24px;
-  line-height: 1;
-  transition: var(--transition-fast);
-  color: hsl(var(--primary-foreground));
-}
+    }
 
-.button:hover {
-  background: linear-gradient(315deg, hsl(var(--riot-red-hover)) 0%, hsl(var(--riot-red-hover)) 50%, hsl(var(--destructive)) 100%);
-  box-shadow: 
-    0 10px 30px -10px hsl(var(--riot-red) / 0.25), 
-    0 10px 30px -10px hsl(var(--riot-red) / 0.5), 
-    0 10px 35px -10px hsl(var(--riot-red) / 0.5);
-  transform: translateY(-2px);
-}
 
-.button .hidden {
-  display: none;
-}
+.themed_icon{
 
-.allContent {
-  width: 275px;
 }

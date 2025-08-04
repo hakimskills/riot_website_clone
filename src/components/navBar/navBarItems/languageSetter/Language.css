@@ -1,44 +1,33 @@
-/* Language Selector */
-.language-available {
-  position: absolute;
-  background-color: hsl(var(--card));
-  border-radius: 4px;
-  margin-top: 10px;
-  box-shadow: var(--shadow-elegant);
-  border: 1px solid hsl(var(--border));
-  z-index: 1000;
+.language-available{
+    position: absolute;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    margin-top: 10px;
 }
+.language-list{
+    list-style: none;
+padding: 20px;
+width: 150px;
 
-.language-list {
-  list-style: none;
-  padding: 20px;
-  width: 150px;
-  margin: 0;
 }
-
 .language-list li {
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 4px;
-  color: hsl(var(--muted-foreground));
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  transition: var(--transition-fast);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+   
 }
-
-.language-list li:hover {
-  color: hsl(var(--riot-red));
-  background-color: hsl(var(--glass-overlay));
+.language-list li:hover{
+    color: rgb(209, 54, 57);
 }
-
-.language-list .selected {
-  color: hsl(var(--riot-red));
-  background-color: hsl(var(--accent));
+.language-list .selected{
+    color: rgb(209, 54, 57);
 }
-
-.language-list svg {
-  fill: hsl(var(--riot-red));
-  margin-left: 10px;
-  transition: var(--transition-fast);
+ .language-list svg{
+    fill: rgb(209, 54, 57);
+   margin-left: 10px;
+    
 }

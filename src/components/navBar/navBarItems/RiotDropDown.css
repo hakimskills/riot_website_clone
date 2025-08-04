@@ -1,41 +1,42 @@
-/* Riot Dropdown Component */
-.drop-down {
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  font-family: "FF Mark W05", Arial, sans-serif;
-  color: hsl(var(--riot-red));
-  overflow: hidden;
-  pointer-events: none;
-  fill: hsl(var(--muted-foreground));
-  width: 8px;
-  height: 5px;
-  padding-right: 20px;
+.drop-down{
+    
+    line-height: 1.5;
+        font-weight: 400;
+        -webkit-text-size-adjust: 100%;
+        --color-bg-gradient: rgba(11, 196, 226, 0.2);
+        font-size: 1em;
+        -webkit-font-smoothing: antialiased;
+        font-family: "FF Mark W05", Arial, sans-serif;
+        color: #d1363a;
+        overflow: hidden;
+        pointer-events: none;
+        
+        fill: #7e7e7e;
+        width: 8px;
+        height: 5px;
+        padding-right: 20px;
+        
 }
-.riot-fist svg {
-  fill: hsl(var(--primary-foreground));
-  transition: var(--transition-fast);
+.riot-fist svg{
+    fill: white;
+ 
 }
-
-.riot-logo {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-  transition: var(--transition-fast);
+.riot-logo{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    
 }
-
 .riot-logo:hover svg {
-  fill: hsl(var(--riot-red));
-  transform: scale(1.1);
+    fill: red;
 }
 .drop-down-menu {
-  position: absolute;
-  background-color: hsl(var(--card));
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 1px solid hsl(var(--border));
-  box-shadow: var(--shadow-elegant);
+    position: absolute;
+ background-color: white;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ 
+ 
 }
